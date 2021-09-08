@@ -107,7 +107,7 @@ const Home = () => {
                     post.map((item,i) => {
                         return (
                         <>
-                            <div key={Math.random()} className="item" onClick={(e)=>{viewitem(e,i)}}>
+                            <div key={i} className="item" onClick={(e)=>{viewitem(e,i)}}>
                             <Item item={item} />
                             </div>
                         </>
