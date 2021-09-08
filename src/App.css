@@ -1,38 +1,90 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #e9ecef;
+}
+
+.home-main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 40px;
+  grid-column-gap: 40px;
+  margin-top: 2%;
+}
+
+.item{
+  margin-left: 15%;
+}
+
+.MuiCardHeader-title{
+  word-break: break-word;
+}
+
+.home-nopost{
   text-align: center;
+  margin-top:5%;
+  color: #adb5bd;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
+  height:70px;
+  background-color: #ced4da;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-heading{
+  margin-left: 10px;
+  color: #495057;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar-drop{
+  position: absolute;
+  right: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .home-main{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin-top: 1%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (min-width: 800px) {
+  .home-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin-top: 1%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .home-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin-top: 1%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .home-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin-top: 1%;
   }
 }
